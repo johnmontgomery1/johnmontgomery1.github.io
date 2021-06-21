@@ -1,6 +1,6 @@
 body
 {
-    background-color:rgb(219, 145, 219);
+    background-color:rgb(49, 40, 49);
 }
 
 h1
@@ -9,15 +9,21 @@ h1
     text-align: center;
 }
 
+h2
+{
+    color:rgb(143, 220, 20);
+    text-align: center;
+}
+
 /*Navbar*/
 ul
 {
     list-style-type: none; /*Removes bulletpoints from list.*/
     margin: 0;
-    padding: 0;
+    padding: 0px;
     width: 200px;
-    background-color: darkslateblue;
-    border: 1px solid #555;
+    background-color: rgb(83, 65, 126);
+    border: 1px solid rgb(143, 220, 20);
     height: 100%;
     position: fixed;
     overflow: auto;
@@ -26,14 +32,14 @@ ul
 li
 {
     text-align: center;
-    border-bottom: 1px solid #555;
+    border-bottom: 1px solid rgb(143, 220, 20);
 }
 
 li a
 {
     display: block; /*Allows entire area to be clickable like a button.*/
     /*width: 60px;*/
-    color:dimgray;
+    color:rgb(143, 220, 20);
     padding: 8px 16px;
     text-decoration: none;
 }
