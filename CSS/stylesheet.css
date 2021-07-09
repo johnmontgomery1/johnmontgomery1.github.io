@@ -7,6 +7,7 @@ h1
 {
     color:crimson;
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h2
@@ -15,21 +16,57 @@ h2
     text-align: center;
 }
 
-/*Navbar*/
+/*Navbar*//*Be careful, fixed positioning may not work too well on mobile*/
 ul
 {
     list-style-type: none; /*Removes bulletpoints from list.*/
     margin: 0;
-    padding: 0px;
-    width: 200px;
+    padding: 0;
+    /*width: 200px;*/
     background-color: rgb(83, 65, 126);
-    border: 1px solid rgb(143, 220, 20);
-    height: 100%;
+    /*border: 1px solid rgb(143, 220, 20);*/
+    /*height: 100%;*/
     position: fixed;
-    overflow: auto;
+    overflow: hidden; /*auto for Sidebar layout*/
+    top: 0;
+    width: 100%;
 }
 
-li
+a
+{
+    display: block;
+    padding: 8px;
+    background-color: yellow;
+}
+
+li 
+{
+    display: inline;
+    float: left;
+}
+
+li a
+{
+    display: block;
+    padding: 14px 16px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+li a:hover
+{
+    background-color: thistle;
+}
+
+.active
+{
+    background-color: tomato;
+}
+
+
+/*Horizontal Navbar/Sidebar*/
+/*li
 {
     text-align: center;
     border-bottom: 1px solid rgb(143, 220, 20);
@@ -39,7 +76,7 @@ li a
 {
     display: block; /*Allows entire area to be clickable like a button.*/
     /*width: 60px;*/
-    color:rgb(143, 220, 20);
+    /*color:rgb(143, 220, 20);
     padding: 8px 16px;
     text-decoration: none;
 }
@@ -59,4 +96,4 @@ li a:hover
 li:last-child
 {
     border-bottom: none;
-}
+}*/
